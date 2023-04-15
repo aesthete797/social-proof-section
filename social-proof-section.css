@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+	 transition: 0.5s;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-kerning: auto;
+}
+
+body {
+  display: flex;
+  background-image:
+    url("bg-pattern-top-desktop.svg"),
+    url("bg-pattern-bottom-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: white;
+  /**background-position: -4px -4px, 7px 4px;
+  background-origin: content-box, padding-box;**/
+  margin: auto;
+  justify-content: center;
+  padding: 100px;
+  font-family: "League Spartan", sans-serif;
+}
+
+#header-parent {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#header-left {
+  width: 50%;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+  width: 70%;
+  line-height: 0.8;
+}
+
+#header-left p {
+  color: hsl(303, 10%, 53%);
+  font-size: 20px;
+  font-weight: 400;
+  width: 90%;
+}
+
+#header-right {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.five-stars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(300, 24%, 90%);
+  margin: 10px 10px 10px 10px;
+  max-width: 370px;
+  padding: 0px 15px;
+  border-radius: 5px;
+}
+
+.five-stars:nth-of-type(2) {
+  margin-left: 60px;
+}
+
+.five-stars:nth-of-type(3) {
+  margin-left: 100px;
+}
+
+#stars {
+  width: 15px;
+  height: 15px;
+  margin: 2px;
+}
+
+.star-box {
+  display: flex;
+  width: 130px;
+  justify-content: space-between;
+}
+
+.five-stars p {
+  color: hsl(300, 43%, 22%);
+  font-size: 15px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+#review-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.purple-cards {
+  background-color: hsl(300, 43%, 22%);
+  padding: 30px;
+  /**margin: 15px 15px 0 15px;**/
+  border-radius: 5px;
+  height: 230px;
+  max-width: 370px;
+}
+
+.purple-cards:nth-of-type(2) {
+  margin-top: 30px;
+}
+
+.purple-cards:nth-of-type(3) {
+  margin-top: 50px;
+}
+
+.purple-cards p {
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.name-image {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.name-only {
+  margin-left: 20px;
+}
+
+.name-only p {
+  margin: 5px;
+  font-weight: 700;
+}
+
+.name-only p:last-of-type {
+  color: hsl(333, 80%, 67%);
+}
+
+.selfie {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.one {
+  background: url(image-colton.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.two {
+  background: url(image-irene.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.three {
+  background: url(image-anne.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 50px;
+  }
+  
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1240px) {
+  #header-parent {
+    flex-direction: column;
+  }
+  
+  #header-right {
+    width: 100%;
+    align-items: center;
+  }
+  
+  #header-left {
+    width: 100%;
+    text-align: center;
+  }
+  
+  h1 {
+  width: 100%;
+}
+
+#header-left p {
+  width: 100%;
+}
+
+ #review-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .purple-cards {
+  max-width: 640px;
+  
+}
+
+
+@media (max-width: 900px) {
+  
+  body {
+    padding: 30px;
+    background-image:
+    url("bg-pattern-top-mobile.svg"),
+    url("bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat;
+  background-color: white;
+  /**background-position: -4px -4px, 7px 4px;
+  background-origin: content-box, padding-box;**/
+  }
+  
+ #header-left {
+   padding: 0;
+ }
+  
+  .five-stars {
+    flex-direction: column;
+    padding: 15px;
+  }
+  
+  .five-stars p {
+    display: block;
+  }
+  
+ .five-stars {
+    width: 100%;
+    margin-left: 0px;
+}
+
+.five-stars:nth-of-type(2) {
+  margin-left: 0px;
+}
+
+.five-stars:nth-of-type(3) {
+  margin-left: 0px;
+}
+
+.purple-cards:nth-of-type(2) {
+  margin-top: 20px;
+}
+
+.purple-cards:nth-of-type(3) {
+  margin-top: 20px;
+}
+
+}
